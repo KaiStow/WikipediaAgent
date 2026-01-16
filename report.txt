@@ -1,0 +1,18 @@
+--- Report generated on 2026-01-16_04:30:40 ---
+
+{
+  "topic": "Southern African Countries",
+  "summary": "Southern Africa is the southernmost region of Africa, comprising multiple countries. The Southern African Development Community (SADC) is the primary regional organization, consisting of 16 member states: Angola, Botswana, Comoros, Democratic Republic of Congo (DRC), Eswatini (formerly Swaziland), Lesotho, Madagascar, Malawi, Mauritius, Mozambique, Namibia, Seychelles, South Africa, Tanzania, Zambia, and Zimbabwe. The most restrictive geographic definition of Southern Africa includes five core countries: Botswana, Eswatini, Lesotho, Namibia, and South Africa. The region is home to approximately 350 million people and features prominent geographical landmarks such as the Zambezi River and Victoria Falls. The economies of Southern African countries are dominated by mining, agriculture, tourism, and the public sector, with South Africa having the most diversified economy in the region.",
+  "sources": [
+    "Wikipedia - Southern Africa",
+    "Wikipedia - Southern African Development Community",
+    "Wikipedia - Road signs in the Southern African Development Community",
+    "SADC Official Website - Member States and Secretariat",
+    "General web search - SADC member countries 2024"
+  ],
+  "tools_used": [
+    "wikipedia",
+    "search"
+  ]
+}
+
