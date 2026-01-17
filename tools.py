@@ -2,15 +2,39 @@ from langchain_community.tools import WikipediaQueryRun, DuckDuckGoSearchRun
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_classic.tools import Tool
 from datetime import datetime
+from json import JSONDecodeError
+from json import loads
+from textwrap import fill
 
-def save_to_txt(data: str, filename: str = "report.txt"):
+def save_to_txt(data, filename: str = "report.txt"):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-    formatted_text = f"--- Report generated on {timestamp} ---\n\n{data}\n\n"
+    
+    if isinstance(data, str):
+        try:
+            data = loads(data)
+        except (JSONDecodeError, TypeError):
+            return f"Error: Invalid data format"
+    
+    summary = fill(data["summary"], width=200)
+    formatted_text = f"""
+--- Report generated on {timestamp}---
+
+Topic: {data['topic']}
+
+Summary:
+
+{summary}
+
+Sources: {data['sources']}
+
+Tools Used: {data['tools_used']}
+
+"""
 
     with open(filename, "a", encoding="utf-8") as file:
         file.write(formatted_text)
     
-    return f"Report saved to {filename}"
+    return f"Report saved"
 
 save_tool = Tool(
     name="save_report",
