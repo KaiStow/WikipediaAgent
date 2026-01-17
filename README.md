@@ -20,16 +20,16 @@ Outputs a structured research report
 
 Each generated report includes the following sections:
 
-Topic
+Topic:
 The research question or subject provided as input.
 
-Summary
+Summary:
 A clear, high-level explanation of the topic based on gathered evidence.
 
-Sources
+Sources:
 A list of references used during research (articles, papers, websites, etc.).
 
-Tools Used
+Tools Used:
 A breakdown of which tools were invoked (and for what purpose) during the research process.
 
 🧠 How It Works
